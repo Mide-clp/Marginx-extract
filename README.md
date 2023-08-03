@@ -15,3 +15,14 @@ The current version of the scraper cannot be run on Ubuntu Linux with headless m
 
 ### Future Solution
 To overcome the captcha challenge, a proposed solution involves implementing an Image processing and image recognition software. This software would be able to identify the puzzle on the image and determine the precise position to drag the block. The Leboncoin captcha employs one image as the foreground block and another as the background image, and this advanced image recognition system would enable seamless automation in the presence of captchas.
+
+## Environment and dependency setup
+
+### Create a new virtual environment
+`python3 -m venv venv`  This creates an env folder in the directory 
+
+Activate the virtual environment `source venv/bin/activate`
+
+run ```pip3 install -r requirements.txt``` this installs all the packages needed
+
+run the scraper `python src/extract.py`
