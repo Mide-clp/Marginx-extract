@@ -35,40 +35,6 @@ def get_proxies():
 
 
 if __name__ == "__main__":
+    pass
 
-
-# from scrapingbee import ScrapingBeeClient
-# import requests
-#
-#
-# # Get free proxies for rotating
-# def get_proxies():
-#     url = "https://www.leboncoin.fr/voitures/offres"
-#
-#     client = ScrapingBeeClient(
-#         api_key='4Q6XZRZFRG8ZI1Y3QSH6Z5JL86XM63CEWKVA18KOZC3F6D5MQFS4W0TNVIZQD6CVKK2DHIPOIFCYJG29')
-#
-#     response = client.get(url, params={'premium_proxy': 'True'})
-#
-#     return response.headers
-#
-
-# print(get_proxies())
-
-    # requests.get("https://proxy.webshare.io/api/v2/profile/", headers={"Authorization": "Token <TOKEN>"})
-
-    http_proxy = "http://brhsvlta-1:ktvgd9lm686i@45.155.68.129:80"
-    https_proxy = "http://brhsvlta:ktvgd9lm686i@2.56.119.93:5074"
-    url = "https://www.leboncoin.fr/voitures/offres"
-
-    proxyDict = {
-        "http": "http://brhsvlta-rotate:ktvgd9lm686i@p.webshare.io:80/",
-        # "https": "http://brhsvlta-rotate:ktvgd9lm686i@p.webshare.io:80/"
-    }
-
-    print("here")
-    r = requests.get(url, proxies=proxyDict, verify=False)
-    print(r)
-    print(r.headers)
-    print(r.status_code)
 

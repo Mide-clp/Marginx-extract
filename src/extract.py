@@ -43,8 +43,8 @@ def include_proxy(use_proxy: bool = False):
                 print(f"This is a good proxy: {proxy_conn}")
                 options = {
                     'proxy': {
-                        'http': f'http://proxy_conn',
-                        'https': f'https://proxy_conn',
+                        'http': f'http://{proxy_conn}',
+                        'https': f'https://{proxy_conn}',
                     }
                 }
 
@@ -110,7 +110,7 @@ class DataGet:
         """generate url for each paginated page"""
         all_listing_url = []
 
-        for x in range(6, max_pagination):
+        for x in range(1, max_pagination):
             url = DataGet.FORMATTED_URL.format(x)
             all_listing_url.append(url)
 

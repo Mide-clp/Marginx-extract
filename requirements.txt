@@ -44,6 +44,7 @@ python-dotenv==1.0.0
 pytz==2023.2
 random-user-agent==1.0.1
 requests==2.28.2
+scrapingbee==1.2.0
 selenium==4.11.2
 selenium-driverless==1.2.6
 selenium-injector==2.3
